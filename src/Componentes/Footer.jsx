@@ -1,18 +1,28 @@
 import React from 'react'
-
+import '../index.css'
+import { BsFillBrushFill } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { BsMusicNote } from "react-icons/bs";
+import { IconContext } from 'react-icons/lib';
+import Kaki from './images/Kakilogo.png';
 
 const Footer = () => {
     return (
         <div>
             <footer className="footer">
                 <div className="footer-left">
-                    <img src="/images/Kakilogo.png" alt="" className="coki" />
+                    <img src={Kaki} alt="" className="coki" />
                     <p>Bienvenidos a mi pagina, aca van a poder conocer un poco mas de mi, ver mis trabajos y hasta pueden ponerse en contacto conmigo. Todo el arte de esta pagina esta hecho por mi. Sin nada mas que agregar disfruten su paso por mi pagina y ante cualquier duda contactenme.</p>
                     <div className="socials">
-                        <a href="https://www.deviantart.com/kakidraws" target="_blank" rel="noreferrer noopener"><i className="bi-brush" /></a>
-                        <a href="https://twitter.com/kakidraws_" target="_blank" rel="noreferrer noopener"><i className="bi-twitter" /></a>
-                        <a href="https://www.instagram.com/kakidraws_/" target="_blank" rel="noreferrer noopener"><i className="bi-instagram" /></a>
-                        <a href="https://www.tiktok.com/@kakidraws_?lang=es" target="_blank" rel="noreferrer noopener"><i className="bi-music-note" /></a>
+                    <IconContext.Provider
+                        value={{ className: "sociales"}}
+                        >
+                        <a href="https://www.deviantart.com/kakidraws" target="_blank" rel="noreferrer noopener"><BsFillBrushFill /></a>
+                        <a href="https://twitter.com/kakidraws_" target="_blank" rel="noreferrer noopener"><BsTwitter /></a>
+                        <a href="https://www.instagram.com/kakidraws_/" target="_blank" rel="noreferrer noopener"><BsInstagram /></a>
+                        <a href="https://www.tiktok.com/@kakidraws_?lang=es" target="_blank" rel="noreferrer noopener"><BsMusicNote /></a>
+                        </IconContext.Provider>
                     </div>
                 </div>
                 <ul className="footer-right">

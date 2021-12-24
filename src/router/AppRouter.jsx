@@ -6,6 +6,7 @@ import Comisiones from "../Componentes/Comisiones";
 import Acerca from "../Componentes/Acerca";
 import Trabajos from "../Componentes/Trabajos";
 
+
 const Approuter = () => {
     return (
         <>

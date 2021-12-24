@@ -1,6 +1,6 @@
 import React from "react";
-import './App.css'
 import acerca from './images/cam.jpg';
+import '../index.css'
 
 
 const Acerca = () => {

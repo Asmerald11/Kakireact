@@ -62,9 +62,10 @@ a.activo,nav ul li a:hover{
 }
 
 .Logo{
-  font-size: 35px;
+  font-size: 45px;
   line-height: 70px;
   padding: 0 100px;
+  padding-top: 10px;
   font-weight: bold;
   font-family: 'Allura', cursive;
 }
@@ -87,6 +88,8 @@ a.activo,nav ul li a:hover{
 @media (max-width: 1100px){
   .botoncheck{
       display: block;
+      float: left;
+      padding-left: 20px;
   }
   .cabecera{
       overflow: hidden;
@@ -116,7 +119,10 @@ a.activo,nav ul li a:hover{
   left: 0;
   }
   label.Logo{
-      font-size: 25px;
+      font-size: 45px;
+      float: right;
+      padding-right: 40px;
+      padding-top: 10px
   }
 }
 
@@ -162,11 +168,13 @@ a.activo,nav ul li a:hover{
   width: 80%;
   text-align: center;
   margin:0 auto;
+  margin-top: 10px;
   display: none;
+  
 }
 
 
-@media (max-width:979px){
+@media (max-width:1100px){
   .Kaki{
       display: none;
   }
@@ -341,6 +349,22 @@ a.activo,nav ul li a:hover{
   margin: 0 auto;
 }
 
+.comms2{
+  display: block;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  
+    .comms{
+      display: none;
+    }
+  
+    .comms2{
+      display: block;
+    }
+}
+
 
 /* Contacto style */
 
@@ -433,7 +457,7 @@ a.activo,nav ul li a:hover{
 /* Footer style */
 
 .coki {
-  width: auto;
+  width: 100%;
 }
 
 *,*:before,*:after{
@@ -445,7 +469,7 @@ footer{
   flex-flow: row wrap;
   padding: 3.125rem;
   color: white;
-  background-image: url(/images/footer.jpg);
+  background-image: url(./Componentes/images/footer.jpg);
   background-repeat: round; 
   margin-top: 4rem;
 }
@@ -518,10 +542,10 @@ h2{
   border-radius: 7px;
 }
 
-.socials a i{
+.sociales{
   color: #D893AE;
-  padding: 10px 8px;
-  font-size: 25px;
+  padding: 8px 8px;
+  font-size: 40px;
 }
 
 @media screen and (min-width: 771px){
@@ -544,3 +568,49 @@ h2{
       font-size: 55px;
   }
 }
+
+
+form{
+  margin: 30px auto 10px;
+  text-align: center;
+}
+
+label input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.subida {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 30px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+label:hover{
+  background-color: var(--primary);
+  color: white;
+}
+
+.output{
+  height: 60px;
+  font-size: 0.8rem;
+}
+
+.error{
+  color: var(--error);
+}
+
+.progress-bar{
+  height: 5px;
+  background: var(--primary);
+  margin-top: 20px;
+}
+
