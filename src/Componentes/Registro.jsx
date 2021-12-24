@@ -8,7 +8,7 @@ import '../index.css'
 const Registro = () => {
     return (
         <div className="forms">
-            <div className="login-form">
+            {/* <div className="login-form">
                 <h1>Iniciar sesion</h1>
                 <form action="/auth/contactoa" method="POST">
                     <input type="text" name="email" placeholder="Email" required />
@@ -25,7 +25,7 @@ const Registro = () => {
                     <input type="text" name="email" placeholder="Email" required />
                     <input type="submit" placeholder="Registrarse" />
                 </form>
-            </div>
+            </div> */}
             <div className="contactos">
                 <div className="izq">
 
